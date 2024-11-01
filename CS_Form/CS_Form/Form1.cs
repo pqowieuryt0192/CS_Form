@@ -16,11 +16,13 @@ namespace CS_Form
         {
             InitializeComponent();
 
-            TestButton testButton = new TestButton();
-
+            TestButton testButton = new TestButton(0,0);
             Controls.Add(testButton);
 
-            
+            TestButton testButton2 = new TestButton(100,100);//テキストボタン(青色のほう)の名前を変えるだけでボタンを増やせる
+            Controls.Add(testButton2);
+
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
