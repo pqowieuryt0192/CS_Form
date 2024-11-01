@@ -16,15 +16,16 @@ namespace CS_Form
         {
             InitializeComponent();
 
-            TestButton testButton = new TestButton(0,0);
-            Controls.Add(testButton);
+            //while (true) 何回ループするか、わからないときにつかう 
 
-            TestButton testButton2 = new TestButton(100,100);//テキストボタン(青色のほう)の名前を変えるだけでボタンを増やせる
-            Controls.Add(testButton2);
+            for (int i = 0; i < 10; i++)
+            {
+                TestButton testButton = new TestButton(i, (i % 3) *  100,(i/3) * 100, 100, 100);
+                Controls.Add(testButton);
 
+            }          
 
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
